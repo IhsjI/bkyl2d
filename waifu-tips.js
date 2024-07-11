@@ -89,7 +89,7 @@ function loadWidget(config) {
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
-			showMessage(["愿你有一天能与重要的人重逢。","所有离别都是为了更好的重逢。"], 2000, 11);
+			showMessage(["愿你有一天能与重要的人重逢。","所有离别都是为了更好的重逢。"], 2000, 11);//关闭看板娘时显示的消息
 			document.getElementById("waifu").style.bottom = "-500px";
 			setTimeout(() => {
 				document.getElementById("waifu").style.display = "none";
